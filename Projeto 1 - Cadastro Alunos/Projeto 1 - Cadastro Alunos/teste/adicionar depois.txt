@@ -1,0 +1,125 @@
+<script>
+         function formatar(mascara, documento){
+             var i = documento.value.length;
+             var saida = mascara.substring(0,1);
+             var texto = mascara.substring(i)
+  
+             if (texto.substring(0,1) != saida){
+             documento.value += texto.substring(0,1);
+            }
+  
+        }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+<h3>Informações pessoais</h3>
+				    Nome:<br>
+					<input type="text" name="nome-pessoa" id="nome-pessoa"><br>
+					Natural da cidade de:<br>
+					<input type="text" name="naturalidade-pessoa" id="naturalidade-pessoa"><br>
+					Data de nascimento:<br>
+					<input type="text" name="nascimento-pessoa" id="nascimento-pessoa"><br>
+					Raça:<br>
+					<input type="text" name="raça-pessoa" id="raça-pessoa"><br>
+					Sexo:<br>
+					<input type="text" name="sexo-pessoa" id="sexo-pessoa"><br>
+					RG:<br>
+					<input type="text" name="rg-pessoa" maxlength="12" id="rg-pessoa" OnKeyPress="formatar('##.###.###-#', this)"><br>
+					CPF:<br>
+					<input type="text" name="cpf-pessoa" maxlength="14" id="cpf-pessoa" OnKeyPress="formatar('###.###.###-##', this)" ><br>
+					
+					<h3>Informações do responsável</h3>
+					
+					Nome responsável:<br>
+					<input type="text" name="nomeresp-pessoa" id="nomeresp-pessoa"><br>
+					CPF resp.:<br>
+					<input type="text" name="cpfresp-pessoa" maxlength="14" id="cpfresp-pessoa" OnKeyPress="formatar('###.###.###-##', this)" ><br>
+					Data nascimento resp.:<br>
+					<input type="text" name="nascimentoresp-pessoa" id="nascimentoresp-pessoa"><br>
+					Naturalidade do resp.:<br>
+					<input type="text" name="naturalidaderesp-pessoa" id="naturalidaderesp-pessoa"><br>
+
+					<h3>Endereço</h3>
+					
+					Rua:<br>
+					<input type="text" name="enderecorua-pessoa" id="enderecorua-pessoa"><br>
+					Número:<br>
+					<input type="number" name="endereconumero-pessoa" id="endereconumero-pessoa"><br>
+					Bairro:<br>
+					<input type="text" name="bairro-pessoa" id="bairro-pessoa"><br>
+					Complemento:<br>
+					<input type="text" name="complemento-pessoa" id="nome-pessoa"><br>
+					Cidade:<br>
+					<input type="text" name="cidade-pessoa" id="cidade-pessoa"><br>
+					Estado:<br>
+					<input type="text" name="estado-pessoa" id="estado-pessoa"><br>
+					CEP:<br>
+					<input type="text" name="cep-pessoa" id="cep-pessoa"><br>
+					
+					<h3>Informações para contato</h3>
+					
+					Fone:<br>
+					<input type="text" name="fone-pessoa" id="fone-pessoa"><br>
+					Fone recado:<br>
+					<input type="text" name="fonerec-pessoa" id="fonerec-pessoa"><br>
+					Empresa onde trabalha:<br>
+					<input type="text" name="empresaatual-pessoa" id="empresaatual-pessoa"><br>
+					Instrução escolar:<br>
+					<input type="text" name="escolaridade-pessoa" id="escolaridade-pessoa"><br>
+					Curso pretendido:<br>
+					<input type="text" name="curso-pessoa" id="curso-pessoa"><br>
+					E-mail:<br>
+					<input type="email" name="email-pessoa" id="email-pessoa"><br>
+
+
+
+
+
+
+
+
+
+
+#473C8B
+#104E8B
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#strUser, #ocupacao, #escolaridade, #situacao, #curso{
+			    -webkit-appearance: none;
+                -moz-appearance: none; 
+                appearance: none; 
+                background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+                background-position: 218px center; 
+                width: 250px; 
+                height:30px; 
+                border:1px solid #808080;
+            }
+
+
+
+
+
+
